@@ -1,14 +1,4 @@
-@import "dark.css"
-@import "fixes.css"
-@import "rounded_circlehover.css"
-@import "rounding.css"
-@import "smallercast.css"
-@import "cornerindicator/indicator_floading.css"
-@import "fields/fields_noboarder.css"
-@import "episodes/episodes_grid.css"
-@import "login/login_frame.css"
-@import "progress/floating.css"
-@import "titlepage/title_simple.css"
+
 :root {--indicator: 0, 164, 220;}
 :root {--selection: 0, 164, 220;}
 
