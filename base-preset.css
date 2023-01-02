@@ -1,0 +1,14 @@
+@import url('https://cdn.jsdelivr.net/gh/stamnostomp/jellyfin-everblush@main/base.css');
+@import url('https://cdn.jsdelivr.net/gh/stamnostomp/jellyfin-everblush@main/cornerindicator/indicator_floading.css';
+@improt url('https://cdn.jsdelivr.net/gh/stamnostomp/jellyfin-everblush@main/episodeList/episodes_grid.css');
+@import url('https://cdn.jsdelivr.net/gh/stamnostomp/jellyfin-everblush@main/fields/fields_noboarder.css');
+@import url('https://cdn.jsdelivr.net/gh/stamnostomp/jellyfin-everblush@main/login/login_frame.css');
+@import url('https://cdn.jsdelivr.net/gh/stamnostomp/jellyfin-everblush@main/progress/floating.css');
+@import url('https://cdn.jsdelivr.net/gh/stamnostomp/jellyfin-everblush@main/titlepage/title_simple.css');
+@import url('https://cdn.jsdelivr.net/gh/stamnostomp/jellyfin-everblush@main/base.css');
+@import url('https://cdn.jsdelivr.net/gh/stamnostomp/jellyfin-everblush@main/dark.css');
+@import url('https://cdn.jsdelivr.net/gh/stamnostomp/jellyfin-everblush@main/fixes.css');
+@import url('https://cdn.jsdelivr.net/gh/stamnostomp/jellyfin-everblush@main/rounded_circlehover.css')
+@import url('https://cdn.jsdelivr.net/gh/stamnostomp/jellyfin-everblush@main/rounding.css');
+@import url('https://cdn.jsdelivr.net/gh/stamnostomp/jellyfin-everblush@main/smallercast.css');
+:root {--rounding: 12px;}
