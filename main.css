@@ -553,17 +553,8 @@ video:cue {
 }
 
 
-.playbackProgress > div {
-    background-color: rgba(0,0,0,.75);
-}
-.itemProgressBarForeground,
-.transcodingProgress > div {
-    background-color: rgba(0,0,0,.3);
-}
-.innerCardFooter.fullInnerCardFooter.innerCardFooterClear {
-    border-radius: 0!important;
-    background: rgba(0,0,0,0);
-}
+
+
 .button-link {
     color: #5e8b7e;
 }
