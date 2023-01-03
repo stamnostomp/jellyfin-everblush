@@ -556,10 +556,7 @@ video:cue {
     border-radius: 0!important;
     background: rgba(0,0,0,.7);
 }
-.itemProgressBar {
-    height: 2000em;
-    background: #0000;
-}
+
 .playbackProgress > div {
     background-color: rgba(0,0,0,.75);
 }
