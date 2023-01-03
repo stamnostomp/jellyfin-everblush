@@ -1,0 +1,459 @@
+/*New progress bar*/
+#indexPage .innerCardFooterClear,
+#itemDetailPage .innerCardFooterClear {
+    background-color: transparent !important;
+    box-shadow: none;
+}
+#indexPage .itemProgressBarForeground,
+#itemDetailPage .itemProgressBarForeground,
+#indexPage .itemProgressBar,
+#itemDetailPage .itemProgressBar {
+    border-radius: var(--rounding);
+}
+#indexPage .itemProgressBarForeground,
+#itemDetailPage .itemProgressBarForeground  {
+    background-color: rgba(var(--accent), 0.95) !important;
+}
+#indexPage .itemProgressBar,
+#itemDetailPage .itemProgressBar {
+    height: 6px;
+    background: rgba(0,0,0,0.4);
+    margin: .5em .8em;
+}
+/*Accommodate play button on mobile*/
+@media all and (max-width: 100em){
+  #indexPage .itemProgressBar,
+  #itemDetailPage .itemProgressBar {
+    margin-right: 3.2em;
+  }
+}
+@supports (backdrop-filter: blur(15px)) {
+  #indexPage .itemProgressBar,
+  #itemDetailPage .itemProgressBar{
+    backdrop-filter: blur(4px);
+    background: rgba(0, 0, 0, 0.35) !important;
+  }
+}
+/*----------------------------------------------------*/
+
+
+
+/*Rounded corners on pretty much everything*/
+
+.detailButton {
+  border-radius: 50%;
+}
+
+progress {
+  border-radius: var(--rounding);
+}
+progress::-webkit-progress-bar {
+  border-radius: var(--rounding);
+}
+progress::-moz-progress-bar {
+  border-radius: var(--rounding);
+}
+progress::-webkit-progress-value {
+  border-radius: var(--rounding);
+}
+.taskProgressOuter,
+.taskProgressInner {
+  border-radius: var(--rounding) !important;
+}
+.formDialogHeader {
+  border-top-left-radius: var(--rounding);
+  border-top-right-radius: var(--rounding);
+}
+.formDialogFooter {
+  border-bottom-left-radius: var(--rounding);
+  border-bottom-right-radius: var(--rounding);
+}
+.cardOverlayContainer {
+	border-radius: var(--rounding) !important;
+}
+.missingIndicator,
+.unairedIndicator,
+.detailTable,
+.primaryImageWrapper > img,
+.toast,
+.paperList,
+.cardContent,
+.sessionNowPlayingInnerContent,
+.listItem:hover,
+.cardImage,
+.fab,
+.raised,
+.multiSelectCheckboxOutline,
+.itemSelectionPanel,
+.cardContent-button,
+.cardContent-shadow,
+.itemDetailImage,
+.cardImageContainer,
+.cardPadder,
+.listItemImage,
+.listItemImageButton,
+.listItemButton,
+.innerCardFooter,
+.blurhash-canvas,
+.dialog,
+.countIndicator,
+.playedIndicator,
+.listItemIcon,
+.listItem-border,
+.visualCardBox,
+.checkboxOutline,
+.emby-select-withcolor,
+.chapterThumbTextContainer,
+.chapterThumbContainer,
+.chapterThumb,
+.emby-input,
+.emby-textarea,
+.emby-select-withcolor,
+.nowPlayingPageImage,
+.upNextDialog-poster-img,
+.upNextContainer,
+.cardOverlayButtonIcon {
+  border-radius: var(--rounding) !important;
+}
+.osdPoster img {
+  border-radius: var(--rounding); border: none;
+}
+.mdl-slider::-moz-range-thumb {
+  border-radius: var(--rounding);
+}
+.mdl-slider::-ms-thumb {
+  border-radius: var(--rounding);
+}
+.mdl-slider::-webkit-slider-thumb {
+  border-radius: var(--rounding);
+}
+
+div[data-role="controlgroup"] a[data-role="button"]:first-child {
+	border-bottom-left-radius: var(--rounding);
+	border-top-left-radius: var(--rounding);
+}
+div[data-role="controlgroup"] a[data-role="button"]:last-child {
+	border-bottom-right-radius: var(--rounding);
+	border-top-right-radius: var(--rounding);
+}
+#dashboardPage .cardContent, #dashboardPage .sessionNowPlayingInnerContent {
+    border-radius: var(--rounding) var(--rounding) 0 0 !important;
+}
+#divVirtualFolders .cardImageContainer, #divVirtualFolders .cardContent {
+    border-radius: var(--rounding) var(--rounding) 0 0 !important;
+}
+#userProfilesPage .cardImage, #userProfilesPage .cardContent {
+    border-radius: var(--rounding) var(--rounding) 0 0 !important;
+}
+
+/*--------------------------------------------------------------------*/
+
+/*Enlarge button row on item page, even more on mobile*/
+.mainDetailButtons {
+	font-size: 120%;
+}
+
+/*Add fixes, start of file*/
+@media all and (min-width: 100em){
+  .button-flat {
+    margin: .2em !important;
+    padding: .85em !important;
+  }
+}
+@media all and (max-width: 100em){
+  .mainDetailButtons {
+    font-size: 155%;
+  }
+  .detailButton {
+    max-width: 15vw !important;
+  }
+}
+
+/*Media player*/
+.startTimeText, .endTimeText {
+    width: 3.4em;
+    display: block;
+    text-align: center;
+}
+.osdTitle {
+  margin-left: 0.5em;
+}
+
+.videoOsdBottom {
+    padding-top: 1em;
+}
+
+.skinHeader-withBackground.osdHeader {
+    height: 5em;
+}
+
+/*Accommodate ultrawide aspect ratios*/
+@media (min-aspect-ratio: 1.98/1) {
+  .detailImageContainer .card {
+    width: 21vw !important ;
+  }
+  .detailPagePrimaryContainer {
+    padding-left: 28.45vw !important;
+  }
+  .detailPageContent {
+    padding-left: 28.45vw !important;
+  }
+}
+@media (min-aspect-ratio: 2.7/1) {
+  .detailImageContainer .card {
+    width: 16vw !important;
+  }
+  .detailPagePrimaryContainer {
+    padding-left: 23.45vw !important;
+  }
+  .detailPageContent {
+    padding-left: 23.45vw !important;
+  }
+}
+
+/*Tweak entry field padding and alignment/sizes*/
+.emby-input,
+.emby-textarea {
+  padding: .4em .55em;
+}
+.emby-select {
+  padding: .35em 1.9em .35em .35em;
+}
+.selectArrow {
+    margin-top: 1.05em;
+}
+
+/*Fix weird shevron off centering*/
+.layout-mobile :not(.sectionTitleContainer-cards)>.sectionTitle-cards {
+ padding-top:0em;
+}
+.sectionTitle {
+	margin-left: .4em !important;
+	margin-top: .2em !important;
+	margin-bottom: .2em !important;
+}
+.sectionTitleTextButton > .material-icons {
+    margin: 0;
+}
+.layout-mobile .sectionTitleTextButton > .material-icons {
+    padding-top: .2em;
+}
+
+/*Fix the UI shifting around*/
+.nowPlayingBarCurrentTime {
+    width: 6em;
+}
+.osdTextContainer {
+    margin: 0 !important;
+    margin-top: 0.2em !important;
+    padding-left: 0.5em !important;
+    padding-right: 0.5em !important;
+}
+
+/*Fix top right user icon when using a profile image*/
+.headerUserButtonRound {
+  border-radius: 50px !important;
+}
+
+/*Improve some menu alignments*/
+.navMenuOptionText {
+    margin-top: 0;
+}
+.formDialogHeaderTitle {
+  margin-left: 1em;
+}
+.formDialogContent {
+  margin-bottom: 6.2em;
+}
+.dialogContentInner {
+  padding: .5em 1em 1em;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+.listItem-indexnumberleft {
+  margin: 1em;
+}
+.listItem {
+  padding-left: 1em;
+}
+
+/*-----------------------------------------------------*/
+
+
+/*Size episode preview images in a more compact way*/
+
+.childrenItemsContainer.itemsContainer.padded-right.vertical-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media all and (min-width: 2000px) {
+  .listItemImage-large {
+    height: 9.5vw;
+  }
+}
+
+@media all and (max-width: 2000px) {
+  .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.layout-mobile
+  .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
+  grid-template-columns: 1fr;
+}
+
+#itemDetailPage .listItem-content {
+  border-radius: var(--rounding);
+  overflow: hidden;
+  transition: background 0.15s ease-in-out;
+  flex-flow: column;
+  -webkit-transition: background 0.15s ease-in-out;
+  -moz-transition: background 0.15s ease-in-out;
+  -ms-transition: background 0.15s ease-in-out;
+  -o-transition: background 0.15s ease-in-out;
+}
+
+.listItemImage.listItemImage-large {
+  width: 100%;
+  margin: 0;
+}
+
+.listItem-overview.listItemBodyText {
+  height: 5.5em !important;
+  font-size: 1em !important;
+}
+
+.layout-mobile .listItemImageButton-icon {
+  padding: 0;
+  top: 0.34em;
+  position: absolute !important;
+  font-size: 1.5em !important;
+  right: 3em;
+}
+
+#itemDetailPage .listItem {
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  border-radius: var(--rounding);
+  padding: .5em;
+}
+
+#itemDetailPage .secondary.listItem-overview.listItemBodyText {
+  height: 100%;
+  margin: 0;
+}
+
+.listItem[data-mediatype="Audio"] {
+  padding: 0 1em;
+  border-radius: var(--rounding) !important;
+  -webkit-border-radius: var(--rounding) !important;
+  -moz-border-radius: var(--rounding) !important;
+  -ms-border-radius: var(--rounding) !important;
+  -o-border-radius: var(--rounding) !important;
+}
+
+.layout-mobile #itemDetailPage .listItemImageButton {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  color: white;
+}
+
+.layout-mobile .listItemIndicators {
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.layout-mobile .playedIndicator {
+  width: 100%;
+  height: 100%;
+  font-size: 1.2rem;
+}
+
+.layout-mobile .listItemIndicators .indicatorIcon.check {
+  position: absolute;
+  top: .55em;
+  right: 5.4em;
+  z-index: 2;
+}
+
+.layout-mobile .listItemBodyText {
+  max-width: 10rem;
+}
+
+.layout-mobile .listItem .playedIndicator {
+  background: transparent !important;
+  color: rgba(var(--accent));
+}
+
+.layout-mobile .listItemImage {
+  height: 100% !important;
+  width: 100% !important;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  border-radius: var(--rounding) !important;
+}
+
+.layout-mobile  .listItemImageButton:hover {
+    transform: scale(1);
+}
+
+.layout-mobile .listViewUserDataButtons {
+  position: absolute;
+  right: 0;
+  top: 1.25em;
+  padding-right: 1em;
+}
+
+.layout-mobile .listItemButton {
+  padding: 0 0.556em !important;
+}
+
+.layout-mobile #itemDetailPage .listItem-content {
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  align-items: flex-start;
+}
+
+.layout-mobile #itemDetailPage .listItem-content {
+  background: none !important;
+  position: unset;
+  color: white;
+}
+
+.listItemImageButton {
+  margin: auto;
+  font-size: 1.6em !important;
+}
+.listItemBody.itemAction,
+.listItem-bottomoverview.secondary{
+  z-index: 1;
+}
+.listItem-bottomoverview.secondary{
+  text-align: justify;
+  padding: .5em;
+  margin: 0;
+}
+
+/*---------------------------------------------------*/
