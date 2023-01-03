@@ -1,4 +1,4 @@
-/*New progress bar*/
+/*New progress bar
 #indexPage .innerCardFooterClear,
 #itemDetailPage .innerCardFooterClear {
     background-color: transparent !important;
@@ -20,7 +20,7 @@
     background: rgba(0,0,0,0.4);
     margin: .5em .8em;
 }
-/*Accommodate play button on mobile*/
+/*Accommodate play button on mobile
 @media all and (max-width: 100em){
   #indexPage .itemProgressBar,
   #itemDetailPage .itemProgressBar {
